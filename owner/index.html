@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner's Library — Arcane Beauty Lounge</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="bg-motif">
+  <svg viewBox="0 0 1366 768" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="wg1" x1="0%" y1="100%" x2="65%" y2="0%"><stop offset="0%" stop-color="#6B4A0A" stop-opacity="0.92"/><stop offset="42%" stop-color="#C9A84C" stop-opacity="0.36"/><stop offset="100%" stop-color="#6B4A0A" stop-opacity="0"/></linearGradient>
+      <linearGradient id="wg2" x1="0%" y1="100%" x2="80%" y2="0%"><stop offset="0%" stop-color="#3A2705" stop-opacity="0.72"/><stop offset="100%" stop-color="#3A2705" stop-opacity="0"/></linearGradient>
+    </defs>
+    <path d="M-150 830 Q120 500 420 410 Q630 345 855 225 Q1075 108 1520 -55" stroke="url(#wg1)" stroke-width="210" fill="none" opacity="0.95"/>
+    <path d="M-150 940 Q230 570 545 478 Q770 408 1055 248 Q1255 138 1520 48" stroke="url(#wg2)" stroke-width="72" fill="none" opacity="0.82"/>
+    <path d="M1520 -130 Q1230 175 1125 425 Q1018 588 1148 790" stroke="rgba(14,9,2,0.6)" stroke-width="280" fill="none"/>
+  </svg>
+</div>
+
+<!-- GATE -->
+<div class="page" id="gate-view">
+  <div class="logo-block">
+    <img src="../assets/logo.png" alt="Arcane Beauty Lounge" class="logo-img">
+    <div class="logo-name">ARCANE</div>
+    <div class="logo-sub">Beauty Lounge</div>
+  </div>
+  <div class="gate-card">
+    <p class="gate-label">Owner's Library</p>
+    <p class="gate-hint">This section is restricted.<br>Enter your password to continue.</p>
+    <input type="password" class="gate-input" id="pw" placeholder="Password" autocomplete="current-password">
+    <button class="btn" style="width:100%;justify-content:center;" onclick="checkPw()">Enter</button>
+    <p class="gate-error" id="err">Incorrect password. Please try again.</p>
+  </div>
+  <a href="../index.html" class="return-link">Return to Main</a>
+</div>
+
+<!-- LIBRARY -->
+<div class="library-view" id="library-view">
+  <div class="logo-block" style="margin-bottom:1.5rem;">
+    <img src="../assets/logo.png" alt="Arcane Beauty Lounge" class="logo-img" style="height:85px;">
+    <div class="logo-name" style="font-size:1.75rem;">ARCANE</div>
+    <div class="logo-sub">Beauty Lounge</div>
+  </div>
+  <p class="page-heading">Owner's Library</p>
+  <p class="page-sub">Select a section to expand and access your documents.</p>
+
+  <div class="accordion-wrap">
+
+    <!-- LEGAL -->
+    <div class="accordion">
+      <div class="accordion-trigger">
+        <div><div class="accordion-title">Legal</div><div class="accordion-sub">Franchise agreements and legal documentation</div></div>
+        <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="accordion-panel"><div class="accordion-inner"><div class="accordion-body"><div class="sub-accordion-wrap">
+
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">Franchise Agreement</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Franchise Agreement"></iframe>
+          </div></div></div>
+        </div>
+
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">Management Services Agreement</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Management Services Agreement"></iframe>
+          </div></div></div>
+        </div>
+
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">Shared Franchise Agreement</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Shared Franchise Agreement"></iframe>
+          </div></div></div>
+        </div>
+
+      </div></div></div></div>
+    </div>
+
+    <!-- FINANCIAL -->
+    <div class="accordion">
+      <div class="accordion-trigger">
+        <div><div class="accordion-title">Financial</div><div class="accordion-sub">Investment breakdown and profit projections</div></div>
+        <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="accordion-panel"><div class="accordion-inner"><div class="accordion-body"><div class="sub-accordion-wrap">
+
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">Franchise Cost</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Franchise Cost"></iframe>
+          </div></div></div>
+        </div>
+
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">Investment Capital</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Investment Capital"></iframe>
+          </div></div></div>
+        </div>
+
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">Profit &amp; Loss Projections</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="P&L Projections"></iframe>
+          </div></div></div>
+        </div>
+
+      </div></div></div></div>
+    </div>
+
+    <!-- MANAGEMENT RESOURCES -->
+    <div class="accordion">
+      <div class="accordion-trigger">
+        <div><div class="accordion-title">Management Resources</div><div class="accordion-sub">Back office SOPs and HQ manuals</div></div>
+        <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="accordion-panel"><div class="accordion-inner"><div class="accordion-body"><div class="sub-accordion-wrap">
+
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">01 — Finance</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Finance Manual"></iframe>
+          </div></div></div>
+        </div>
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">02 — Legal Governance</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Legal Governance Manual"></iframe>
+          </div></div></div>
+        </div>
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">03 — Marketing</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Marketing Manual"></iframe>
+          </div></div></div>
+        </div>
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">04 — Operations</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Operations Manual"></iframe>
+          </div></div></div>
+        </div>
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">05 — Research, Development &amp; Innovations</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="RD&I Manual"></iframe>
+          </div></div></div>
+        </div>
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">06 — Sales</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Sales Manual"></iframe>
+          </div></div></div>
+        </div>
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">07 — Supply Chain &amp; Logistics</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Supply Chain Manual"></iframe>
+          </div></div></div>
+        </div>
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">08 — Technology &amp; Data Governance</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Technology Manual"></iframe>
+          </div></div></div>
+        </div>
+        <div class="sub-accordion">
+          <div class="sub-trigger"><span class="sub-title">09 — Training</span><svg class="sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="sub-panel"><div class="sub-inner"><div class="sub-body">
+            <a href="PASTE_VIEW_URL" target="_blank" rel="noopener" class="drive-open-link">Open in Drive ↗</a>
+            <iframe class="drive-iframe" src="PASTE_EMBED_URL" loading="lazy" allowfullscreen title="Training Manual"></iframe>
+          </div></div></div>
+        </div>
+
+      </div></div></div></div>
+    </div>
+
+  </div>
+  <a href="../index.html" class="return-link">Return to Main</a>
+</div>
+
+<script>
+  const CORRECT = 'VIP@Arcane24';
+  function showLibrary() {
+    document.getElementById('gate-view').style.display = 'none';
+    document.getElementById('library-view').classList.add('visible');
+  }
+  if (sessionStorage.getItem('owner_auth') === 'true') showLibrary();
+  document.getElementById('pw').addEventListener('keydown', e => { if (e.key === 'Enter') checkPw(); });
+  function checkPw() {
+    if (document.getElementById('pw').value === CORRECT) {
+      sessionStorage.setItem('owner_auth', 'true');
+      showLibrary();
+    } else {
+      document.getElementById('err').classList.add('visible');
+      document.getElementById('pw').value = '';
+      document.getElementById('pw').focus();
+    }
+  }
+  document.querySelectorAll('.accordion-trigger').forEach(t => t.addEventListener('click', () => t.closest('.accordion').classList.toggle('open')));
+  document.querySelectorAll('.sub-trigger').forEach(t => t.addEventListener('click', () => t.closest('.sub-accordion').classList.toggle('open')));
+</script>
+</body>
+</html>
