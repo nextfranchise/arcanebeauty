@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home — Arcane Beauty Lounge</title>
+  <title>Services — Arcane Beauty Lounge</title>
   <link rel="stylesheet" href="style.css">
   <meta name="robots" content="noindex, nofollow">
 </head>
@@ -33,9 +33,9 @@
       <span class="nav-logo-name">ARCANE</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html" class="">Home</a></li>
       <li><a href="about.html" class="">About</a></li>
-      <li><a href="services.html" class="">Services</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
       <li><a href="franchise.html" class="">Franchise</a></li>
       <li><a href="contact.html" class="">Contact Us</a></li>
     </ul>
@@ -50,102 +50,69 @@
 </nav>
 <div class="nav-overlay" id="nav-overlay" onclick="toggleDrawer()"></div>
 <div class="nav-drawer" id="nav-drawer">
-  <a href="index.html" class="active">Home</a>
+  <a href="index.html" class="">Home</a>
   <a href="about.html" class="">About</a>
-  <a href="services.html" class="">Services</a>
+  <a href="services.html" class="active">Services</a>
   <a href="franchise.html" class="">Franchise</a>
   <a href="contact.html" class="">Contact Us</a>
   <a href="portal/index.html" class="nav-portal">Portal</a>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-  <img src="assets/logo.png" alt="Arcane Beauty Lounge" class="hero-logo">
-  <div class="hero-name">ARCANE</div>
-  <div class="hero-sub">Beauty Lounge</div>
-  <p class="hero-tagline">PASTE_HERO_TAGLINE_HERE</p>
-  <div class="hero-btns">
-    <a href="services.html" class="btn btn-solid">Explore Services</a>
-    <a href="franchise.html" class="btn">Franchise With Us</a>
-  </div>
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    <span>Scroll</span>
-  </div>
+<section class="hero" style="min-height:55vh;">
+  <span class="section-label" style="animation:fadeUp 1.1s cubic-bezier(0.22,1,0.36,1) 0.1s both;display:block;">What We Offer</span>
+  <h1 class="hero-name" style="font-size:clamp(2rem,5vw,3.5rem);color:var(--text);">Our <span style="color:var(--accent);">Services</span></h1>
+  <p class="hero-tagline">PASTE_SERVICES_PAGE_TAGLINE</p>
 </section>
 
-<!-- ABOUT TEASER -->
-<section class="section section-alt">
-  <div class="section-inner split">
-    <div>
-      <span class="section-label" data-animate>Our Story</span>
-      <h2 class="section-title" data-animate data-animate-delay="1">Redefining the <em>beauty experience</em></h2>
-      <p class="section-body" data-animate data-animate-delay="2">PASTE_BRAND_INTRO_HERE</p>
-      <div style="margin-top:2rem;" data-animate data-animate-delay="3">
-        <a href="about.html" class="btn">Our Story</a>
-      </div>
-    </div>
-    <div class="split-img" data-animate data-animate-delay="2">
-      <img src="assets/about-image.jpg" alt="Arcane Beauty Lounge interior">
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES TEASER -->
 <section class="section">
   <div class="section-inner">
-    <div style="text-align:center;max-width:560px;margin:0 auto 0.5rem;">
-      <span class="section-label" data-animate>What We Offer</span>
-      <h2 class="section-title" data-animate data-animate-delay="1">Premium <em>aesthetic services</em></h2>
-      <p class="section-body" data-animate data-animate-delay="2" style="margin:0 auto;">PASTE_SERVICES_INTRO_HERE</p>
-    </div>
-    <div class="card-grid">
-      <!-- Repeat for each service teaser (3-4) -->
-      <div class="card" data-animate data-animate-delay="1">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;">
+
+      <!-- Repeat this block per service -->
+      <div class="service-card" data-animate>
+        <img src="assets/service-1.jpg" alt="Service name" class="service-card-img">
+        <div class="service-card-body">
+          <div class="service-card-title">PASTE_SERVICE_NAME</div>
+          <p class="service-card-text">PASTE_SERVICE_DESCRIPTION</p>
         </div>
-        <div class="card-title">PASTE_SERVICE_NAME</div>
-        <div class="card-text">PASTE_SERVICE_DESC</div>
       </div>
-      <div class="card" data-animate data-animate-delay="2">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+
+      <div class="service-card" data-animate data-animate-delay="1">
+        <img src="assets/service-2.jpg" alt="Service name" class="service-card-img">
+        <div class="service-card-body">
+          <div class="service-card-title">PASTE_SERVICE_NAME</div>
+          <p class="service-card-text">PASTE_SERVICE_DESCRIPTION</p>
         </div>
-        <div class="card-title">PASTE_SERVICE_NAME</div>
-        <div class="card-text">PASTE_SERVICE_DESC</div>
       </div>
-      <div class="card" data-animate data-animate-delay="3">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+
+      <div class="service-card" data-animate data-animate-delay="2">
+        <img src="assets/service-3.jpg" alt="Service name" class="service-card-img">
+        <div class="service-card-body">
+          <div class="service-card-title">PASTE_SERVICE_NAME</div>
+          <p class="service-card-text">PASTE_SERVICE_DESCRIPTION</p>
         </div>
-        <div class="card-title">PASTE_SERVICE_NAME</div>
-        <div class="card-text">PASTE_SERVICE_DESC</div>
       </div>
-      <div class="card" data-animate data-animate-delay="4">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+
+      <div class="service-card" data-animate data-animate-delay="3">
+        <img src="assets/service-4.jpg" alt="Service name" class="service-card-img">
+        <div class="service-card-body">
+          <div class="service-card-title">PASTE_SERVICE_NAME</div>
+          <p class="service-card-text">PASTE_SERVICE_DESCRIPTION</p>
         </div>
-        <div class="card-title">PASTE_SERVICE_NAME</div>
-        <div class="card-text">PASTE_SERVICE_DESC</div>
       </div>
-    </div>
-    <div style="text-align:center;margin-top:2.5rem;" data-animate>
-      <a href="services.html" class="btn">View All Services</a>
+
+      <!-- Add more service cards as needed -->
     </div>
   </div>
 </section>
 
-<!-- FRANCHISE TEASER -->
+<!-- CTA -->
 <section class="cta-strip">
-  <div data-animate>
-    <span class="section-label" style="justify-content:center;display:block;">Franchise Opportunity</span>
-  </div>
-  <h2 class="section-title" style="text-align:center;margin-bottom:1rem;" data-animate data-animate-delay="1">Own an <em>Arcane</em> franchise</h2>
-  <p class="section-body" style="text-align:center;margin:0 auto 2.5rem;" data-animate data-animate-delay="2">PASTE_FRANCHISE_TEASER_HERE</p>
-  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" data-animate data-animate-delay="3">
-    <a href="franchise.html" class="btn btn-solid">Learn More</a>
-    <a href="contact.html" class="btn">Get In Touch</a>
+  <h2 class="section-title" style="text-align:center;margin-bottom:1rem;" data-animate>Ready to <em>experience</em> Arcane?</h2>
+  <p class="section-body" style="text-align:center;margin:0 auto 2.5rem;" data-animate data-animate-delay="1">PASTE_SERVICES_CTA_TEXT</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" data-animate data-animate-delay="2">
+    <a href="contact.html" class="btn btn-solid">Book a Consultation</a>
+    <a href="franchise.html" class="btn">Franchise With Us</a>
   </div>
 </section>
 
